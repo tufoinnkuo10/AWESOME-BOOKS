@@ -1,10 +1,111 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
-  padding: 1.5px;
+  padding: 0;
   list-style: none;
-  
+	color: black;
 }
-hr{
-  margin-top: 10px;
+
+/* IDs section */
+#Result {
+	border: solid 1px ;
+	width: 60%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+#booksForm {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+#bookTitle, #bookAuthor {
+	width: 100%;
+	height: 50px;
+	padding: 5px;
+	margin-bottom: 10px;
+	background: none;
+	font-weight: 500;
+	font-size: 15px;
+	border: 1px solid black;
+}
+
+#bookTitle::placeholder, #bookAuthor::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+/* Class section */
+body {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background-image: url(./image/books.jpg);
+	background-size: 100% 100%;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 60%;
+	height: 100vh;
+	background:rgba(255, 255, 255, 0.2);
+	padding: 50px 30px;
+  border: 2.5px solid;
+}
+
+.heading {
+	width: max-content;
+	height: auto;
+	font-size: 40px;
+	margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.heading1 {
+	font-family: cursive;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 7px;
+}
+
+.add-button, .remove-button {
+	padding: 3px 10px;
+  background: #3a3939;
+  color: black;
+  font-size: 16px;
+  font-weight: bold
+}
+
+.book-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding-top: 2px;
+
+}
+
+.book-title {
+  width: max-content;
+  margin-right: 1rem;
+  font-size: 16px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.author-name {
+width: max-content;
+margin-right: auto;
+font-size: 16px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+
 }
