@@ -34,8 +34,7 @@ class BookList {
     author.classList.add('author-name');
 
     const by = document.createElement('p');
-    by.classList.add('byclass')
-
+    by.classList.add('byclass');
 
     const removeBtn = document.createElement('button');
     removeBtn.classList.add('remove-button');
