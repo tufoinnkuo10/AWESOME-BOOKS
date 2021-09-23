@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 class BookList {
   constructor() {
     this.list = [];
@@ -79,7 +80,7 @@ window.addEventListener('load', () => {
     library.list = JSON.parse(books);
   }
 
-	const { DateTime } = luxon;
+  const { DateTime } = luxon;
   const now = DateTime.now();
   document.querySelector('.date-container').textContent = now.toLocaleString(DateTime.DATETIME_MED);
 
