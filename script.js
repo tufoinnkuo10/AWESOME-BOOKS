@@ -105,3 +105,4 @@ contactDisplay.addEventListener("click", function () {
   bookDisplay.classList.add("d-none");
   contact.classList.remove("d-none");
 });
+
