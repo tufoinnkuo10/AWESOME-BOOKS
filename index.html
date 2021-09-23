@@ -8,17 +8,40 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
 
-  <body>
+  
     <main>
-      <h1 class="heading">Awesome Books</h1>
-      <ul id="Result"></ul>
-      <p class="heading1">Add a new book</p>
+        <h1 class="heading">Awesome Books</h1>
+        <body>
+            <div class="menu">
+              <div class="menu-awesome">Awesome Books</div>
+              <div class="menu-list">List</div>
+              <div class="menu-add">Add new</div>
+              <div class="menu-contact">Contact</div>
+            </div>
 
+            <h2>All owesome books</h2>
+      <div class="list-display">
+      <ul id="Result"></ul></div>
+      
+    <div class="form d-none">
+        <p class="heading1">Add a new book</p>
       <form id="booksForm">
         <input type="text" id="bookTitle" placeholder="Book's title" />
         <input type="text" id="bookAuthor" placeholder="Book's author" />
         <button class="add-button" type="submit" id="submit">add +</button>
       </form>
+    </div>
+    <div class="contact d-none">
+        <h2>Contact Information</h2>
+        <p>Do have question or you just want to say "Hello"?
+            <br> You can reach aout us!
+        </p>
+        <ul>
+            <li>Our email</li>
+            <li>Our email</li>
+            <li>Our email</li>
+        </ul>
+    </div>
     </main>
     <script src="./script.js"></script>
   </body>

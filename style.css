@@ -6,6 +6,48 @@
   color: black;
 }
 
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  border: 2px solid black;
+}
+
+.menu-awesome {
+  border-right: 2px solid black;
+  width: 50%;
+  padding-left: 10px;
+}
+
+.menu-list {
+  width: 15%;
+  text-align: center;
+  cursor: pointer;
+  border-right: 2px solid black;
+}
+
+.menu-add {
+  width: 18%;
+  text-align: center;
+  cursor: pointer;
+  border-right: 2px solid black;
+}
+
+.menu-contact {
+  text-align: center;
+  cursor: pointer;
+  text-decoration: tomato;
+}
+
+.d-none {
+  display: none;
+}
+
+.list-display {
+  width: 100%;
+  border: 1px solid yellow;
+}
+
 #Result {
   border: solid 2px;
   width: 60%;
@@ -72,7 +114,7 @@ main {
   font-size: 40px;
   padding-top: 30px;
   margin-bottom: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .heading1 {
@@ -110,7 +152,7 @@ main {
   margin-right: 0.5rem;
   font-size: 16px;
   font-weight: bolder;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .author-name {
@@ -118,14 +160,14 @@ main {
   margin-right: auto;
   font-size: 16px;
   font-weight: bolder;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .byclass {
   padding-right: 8px;
   font-size: 16px;
   font-weight: bolder;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 @media screen and (max-width: 950) {
