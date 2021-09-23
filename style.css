@@ -3,95 +3,92 @@
   margin: 0;
   padding: 0;
   list-style: none;
-	color: black;
- 
- 
-
+  color: black;
 }
 
-/* IDs section */
 #Result {
-	border: solid 2px ;
-	width: 60%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	padding: 20px;
-	margin-bottom: 30px;
+  border: solid 2px;
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
-
-#Result li:nth-child(odd){
+#Result li:nth-child(odd) {
   background-color: rgb(69, 69, 70);
 }
 
 #booksForm {
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-#bookTitle, #bookAuthor {
-	width: 100%;
-	height: 50px;
-	padding: 5px;
-	margin-bottom: 10px;
-	background: none;
-	font-weight: bold;
-	font-size: 16px;
-	border: 2px solid black;
+#bookTitle,
+#bookAuthor {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background: none;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid black;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#bookTitle::placeholder, #bookAuthor::placeholder {
+#bookTitle::placeholder,
+#bookAuthor::placeholder {
   color: black;
   font-weight: bold;
 }
 
-/* Class section */
 body {
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	background-image: url(./image/books.jpg);
-	background-size: 100% 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-image: url(./image/books.jpg);
+  background-size: 100% 100%;
   font-family: cursive;
 }
 
 main {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	width: 60%;
-	height: 100vh;
-	background:rgba(255, 255, 255, 0.2);
-	padding: 50px 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 50px 30px;
   border: 2.5px solid;
 }
 
 .heading {
-	width: max-content;
-	height: auto;
-	font-size: 40px;
+  width: max-content;
+  height: auto;
+  font-size: 40px;
   padding-top: 30px;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .heading1 {
-	font-family: cursive;
+  font-family: cursive;
   font-size: 18px;
   font-weight: 700;
   padding-bottom: 7px;
 }
 
-.add-button, .remove-button {
-	padding: 3px 10px;
+.add-button,
+.remove-button {
+  padding: 3px 10px;
   background: #3a3939;
   color: black;
   font-size: 16px;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .remove-button {
@@ -106,7 +103,6 @@ main {
   align-items: center;
   justify-content: start;
   padding-top: 2px;
-
 }
 
 .book-title {
@@ -115,7 +111,6 @@ main {
   font-size: 16px;
   font-weight: bolder;
   font-family: 'Times New Roman', Times, serif;
-
 }
 
 .author-name {
@@ -124,7 +119,6 @@ main {
   font-size: 16px;
   font-weight: bolder;
   font-family: 'Times New Roman', Times, serif;
-
 }
 
 .byclass {
@@ -132,11 +126,11 @@ main {
   font-size: 16px;
   font-weight: bolder;
   font-family: 'Times New Roman', Times, serif;
-
 }
+
 @media screen and (max-width: 950) {
   #Result {
-    border: solid 2px ;
+    border: solid 2px;
     width: 60%;
     height: auto;
     display: flex;
@@ -144,6 +138,4 @@ main {
     padding: 20px;
     margin-bottom: 30px;
   }
-
-  
 }

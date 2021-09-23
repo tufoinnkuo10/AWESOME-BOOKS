@@ -25,25 +25,25 @@ class BookList {
 
   bookElement(book) {
     const li = document.createElement('li');
-		li.classList.add('book-container');
+    li.classList.add('book-container');
 
     const title = document.createElement('h5');
-		title.classList.add('book-title');
+    title.classList.add('book-title');
 
     const author = document.createElement('h5');
-		author.classList.add('author-name');
+    author.classList.add('author-name');
 
     const by = document.createElement('p');
     by.classList.add('byclass')
-    
+
 
     const removeBtn = document.createElement('button');
-		removeBtn.classList.add('remove-button');
-		
+    removeBtn.classList.add('remove-button');
+
     removeBtn.addEventListener('click', () => this.removeBook(book.id));
     title.innerText = book.title;
     author.innerText = book.author;
-    by.innerText= 'by ';
+    by.innerText = 'by ';
     removeBtn.innerText = 'remove';
     title.classList.add('title');
     li.appendChild(title);
