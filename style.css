@@ -56,6 +56,18 @@
   width: 70%;
 }
 
+/* IDs section */
+
+.infos {
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.infos li {
+  list-style: circle;
+  font-weight: bold;
+}
+
 #Result {
   border: solid 4px;
   width: 100%;
@@ -163,23 +175,14 @@ main {
   font-family: "Times New Roman", Times, serif;
 }
 
-.all-a-books, h2 {
+.all-a-books,
+h2 {
   font-family: cursive;
   font-size: 25px;
   text-align: center;
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 10px;
-}
-
-.infos {
-  padding-left: 20px;
-  font-weight: bold;
-}
-
-.infos li {
-  list-style: circle;
-  font-weight: bold;
 }
 
 .byclass {
@@ -191,12 +194,12 @@ main {
 
 @media screen and (max-width: 950) {
   #Result {
-  border: solid 2px;
-  width: 60%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  margin-bottom: 30px;
+    border: solid 2px;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 30px;
   }
 }
