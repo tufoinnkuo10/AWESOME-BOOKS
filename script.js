@@ -87,22 +87,34 @@ const formDisplay = document.querySelector(".form");
 const bookDisplay = document.querySelector(".list-display");
 const contactDisplay = document.querySelector(".menu-contact");
 const contact = document.querySelector(".contact");
+const awesome = document.querySelector('.all-a-books');
 
 listDisplay.addEventListener("click", function () {
   formDisplay.classList.add("d-none");
   bookDisplay.classList.remove("d-none");
   contact.classList.add("d-none");
+	listDisplay.style.color = 'blue';
+	addDisplay.style.color = 'black';
+	contactDisplay.style.color = 'black';
+	awesome.style.display = 'block';
 });
 
 addDisplay.addEventListener("click", function () {
   formDisplay.classList.remove("d-none");
   bookDisplay.classList.add("d-none");
   contact.classList.add("d-none");
+	addDisplay.style.color = 'blue';
+	listDisplay.style.color = 'black';
+	contactDisplay.style.color = 'black';
+	awesome.style.display = 'none';
 });
 
 contactDisplay.addEventListener("click", function () {
   formDisplay.classList.add("d-none");
   bookDisplay.classList.add("d-none");
   contact.classList.remove("d-none");
+	contactDisplay.style.color = 'blue';
+	listDisplay.style.color = 'black';
+	addDisplay.style.color = 'black';
+	awesome.style.display = 'none';
 });
-
