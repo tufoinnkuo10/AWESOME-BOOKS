@@ -56,10 +56,14 @@
   width: 70%;
 }
 
+.textt {
+  padding-bottom: 15px;
+}
+
 .date-container {
   width: 60%;
   height: auto;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
@@ -73,6 +77,10 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+}
+
+.infos li {
+  list-style: inside;
 }
 
 #Result li:nth-child(odd) {
