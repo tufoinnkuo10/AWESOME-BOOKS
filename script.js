@@ -33,15 +33,21 @@ class BookList {
     const author = document.createElement('h5');
 		author.classList.add('author-name');
 
+    const by = document.createElement('p');
+    by.classList.add('byclass')
+    
+
     const removeBtn = document.createElement('button');
 		removeBtn.classList.add('remove-button');
 		
     removeBtn.addEventListener('click', () => this.removeBook(book.id));
     title.innerText = book.title;
     author.innerText = book.author;
+    by.innerText= 'by ';
     removeBtn.innerText = 'remove';
     title.classList.add('title');
     li.appendChild(title);
+    li.appendChild(by);
     li.appendChild(author);
     li.appendChild(removeBtn);
     return li;

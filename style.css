@@ -4,17 +4,25 @@
   padding: 0;
   list-style: none;
 	color: black;
+ 
+ 
+
 }
 
 /* IDs section */
 #Result {
-	border: solid 1px ;
+	border: solid 2px ;
 	width: 60%;
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
 	margin-bottom: 30px;
+}
+
+
+#Result li:nth-child(odd){
+  background-color: rgb(69, 69, 70);
 }
 
 #booksForm {
@@ -30,9 +38,10 @@
 	padding: 5px;
 	margin-bottom: 10px;
 	background: none;
-	font-weight: 500;
-	font-size: 15px;
-	border: 1px solid black;
+	font-weight: bold;
+	font-size: 16px;
+	border: 2px solid black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #bookTitle::placeholder, #bookAuthor::placeholder {
@@ -47,6 +56,7 @@ body {
 	justify-content: center;
 	background-image: url(./image/books.jpg);
 	background-size: 100% 100%;
+  font-family: cursive;
 }
 
 main {
@@ -64,6 +74,7 @@ main {
 	width: max-content;
 	height: auto;
 	font-size: 40px;
+  padding-top: 30px;
 	margin-bottom: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -83,6 +94,12 @@ main {
   font-weight: bold
 }
 
+.remove-button {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+}
+
 .book-container {
   display: flex;
   flex-direction: row;
@@ -94,7 +111,7 @@ main {
 
 .book-title {
   width: max-content;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   font-size: 16px;
   font-weight: bolder;
   font-family: 'Times New Roman', Times, serif;
@@ -102,10 +119,31 @@ main {
 }
 
 .author-name {
-width: max-content;
-margin-right: auto;
-font-size: 16px;
+  width: max-content;
+  margin-right: auto;
+  font-size: 16px;
   font-weight: bolder;
   font-family: 'Times New Roman', Times, serif;
 
+}
+
+.byclass {
+  padding-right: 8px;
+  font-size: 16px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+@media screen and (max-width: 950) {
+  #Result {
+    border: solid 2px ;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  
 }
