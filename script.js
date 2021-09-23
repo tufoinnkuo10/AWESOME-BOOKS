@@ -78,6 +78,11 @@ window.addEventListener('load', () => {
   if (books) {
     library.list = JSON.parse(books);
   }
+
+	const { DateTime } = luxon;
+  const now = DateTime.now();
+  document.querySelector('.date-container').textContent = now.toLocaleString(DateTime.DATETIME_MED);
+
   library.displayBooks();
 });
 
