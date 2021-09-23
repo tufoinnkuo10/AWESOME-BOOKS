@@ -56,6 +56,15 @@
   width: 70%;
 }
 
+.date-container {
+  width: 60%;
+  height: auto;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* IDs section */
 #Result {
   border: solid 4px;
