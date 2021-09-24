@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Awesome Books</title>
-    <link href="./style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <main>
-      <h1 class="heading">Awesome Books</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome Books</title>
+	<script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js" defer></script>
+  <link href="./style.css" rel="stylesheet" />
+</head>
+
+
+<body>
+
+
+  <main>
+    <h1 class="heading">Awesome Books</h1>
+    <div class="menu">
+      <div class="menu-awesome">Awesome Books</div>
+      <div class="menu-list">List</div>
+      <div class="menu-add">Add new</div>
+      <div class="menu-contact">Contact</div>
+    </div>
+
+		<div class="date-container">
+    </div>
+
+    <h2 class="all-a-books">All owesome books</h2>
+    <div class="list-display">
       <ul id="Result"></ul>
-      <p class="heading1">Add a new book</p>
+    </div>
 
+    <div class="form d-none">
+      <h2 class="heading1">Add a new book</h2>
       <form id="booksForm">
         <input type="text" id="bookTitle" placeholder="Book's title" />
         <input type="text" id="bookAuthor" placeholder="Book's author" />
         <button class="add-button" type="submit" id="submit">add +</button>
       </form>
-    </main>
-    <script src="./script.js"></script>
-  </body>
+    </div>
+    <div class="contact d-none">
+      <h2>Contact Information</h2>
+      <p class="textt">Do have question or you just want to say "Hello"?
+        <br> You can reach aout us!
+      </p>
+      <ul class="infos">
+        <li>Our email: email@email.com</li>
+        <li>Our Github: http//:www.github.com/account/</li>
+        <li>Our phone number: 000 123456 789</li>
+      </ul>
+    </div>
+  </main>
+<script src="./script.js"></script>
+</body>
+
 </html>

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 class BookList {
   constructor() {
     this.list = [];
@@ -65,10 +66,9 @@ window.addEventListener('load', () => {
       return;
     }
     const book = {
-      title: title.value || 'This book doesn\'t have a title!',
-      author: author.value || 'This book doesn\'t have an author!',
+      title: title.value || "This book doesn't have a title!",
+      author: author.value || "This book doesn't have an author!",
       id: Date.now(),
-
     };
     library.addBook(book);
     title.value = null;
@@ -79,5 +79,48 @@ window.addEventListener('load', () => {
   if (books) {
     library.list = JSON.parse(books);
   }
+
+  const { DateTime } = luxon;
+  const now = DateTime.now();
+  document.querySelector('.date-container').textContent = now.toLocaleString(DateTime.DATETIME_MED);
+
   library.displayBooks();
+});
+
+const listDisplay = document.querySelector('.menu-list');
+const addDisplay = document.querySelector('.menu-add');
+const formDisplay = document.querySelector('.form');
+const bookDisplay = document.querySelector('.list-display');
+const contactDisplay = document.querySelector('.menu-contact');
+const contact = document.querySelector('.contact');
+const awesome = document.querySelector('.all-a-books');
+
+listDisplay.addEventListener('click', () => {
+  formDisplay.classList.add('d-none');
+  bookDisplay.classList.remove('d-none');
+  contact.classList.add('d-none');
+  listDisplay.style.color = 'blue';
+  addDisplay.style.color = 'black';
+  contactDisplay.style.color = 'black';
+  awesome.style.display = 'block';
+});
+
+addDisplay.addEventListener('click', () => {
+  formDisplay.classList.remove('d-none');
+  bookDisplay.classList.add('d-none');
+  contact.classList.add('d-none');
+  addDisplay.style.color = 'blue';
+  listDisplay.style.color = 'black';
+  contactDisplay.style.color = 'black';
+  awesome.style.display = 'none';
+});
+
+contactDisplay.addEventListener('click', () => {
+  formDisplay.classList.add('d-none');
+  bookDisplay.classList.add('d-none');
+  contact.classList.remove('d-none');
+  contactDisplay.style.color = 'blue';
+  listDisplay.style.color = 'black';
+  addDisplay.style.color = 'black';
+  awesome.style.display = 'none';
 });
