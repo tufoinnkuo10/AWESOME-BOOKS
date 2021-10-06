@@ -14,6 +14,9 @@ Additional description about the project and its features.
 - All the books are being stored in the local storage unless when it is removed.
 - Books won't be added unless both author and title fields are filled.
 
+[Live PREVIEW]( https://tufoinnkuo10.github.io/AWESOME-BOOKS/)
+
+ 
 ## Built With
 
 - github
